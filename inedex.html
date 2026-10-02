@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ქართული ენა და მისი დამწერლობა</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Serif+Georgian:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ 
+  <div class="bg-pattern"></div>
+
+
+  <header>
+    <div class="logo">
+      ქართული დამწერლობა
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link active" data-i18n="nav_home">მთავარი</a></li>
+        <li><a href="#scripts" class="nav-link" data-i18n="nav_scripts">დამწერლობები</a></li>
+        <li><a href="#books" class="nav-link" data-i18n="nav_books">წიგნები</a></li>
+        <li><a href="#quiz" class="nav-link" data-i18n="nav_quiz">ქვიზი</a></li>
+      </ul>
+    </nav>
+    <div class="lang-toggle">
+      <button id="langBtn" onclick="toggleLanguage()">EN</button>
+    </div>
+  </header>
+
+  <main>
+   
+    <section id="home" class="page-section active">
+      <div class="hero-content">
+        <div class="gold-badge" data-i18n="hero_badge">იუნესკოს არამატერიალური კულტურული მემკვიდრეობა</div>
+        <h1 id="heroTitle" data-i18n="hero_title">ქართული ენა და მისი დამწერლობა</h1>
+        <p data-i18n="hero_subtitle">სამი ათასწლოვანი კულტურა, სამი ცოცხალი დამწერლობა და უმდიდრესი მწიგნობრობა</p>
+
+        <!-- Georgian Flag Image -->
+        <div class="flag-container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg" alt="საქართველოს დროშა" class="georgian-flag">
+        </div>
+
+        <div class="action-buttons">
+          <a href="#scripts" class="btn btn-gold" onclick="navigateTo('#scripts')" data-i18n="btn_explore">დამწერლობების აღმოჩენა</a>
+          <a href="#quiz" class="btn btn-outline" onclick="navigateTo('#quiz')" data-i18n="btn_start_quiz">ქვიზის შევსება (20 კითხვა)</a>
+        </div>
+
+        <div class="creator-credit" data-i18n="creator_text">
+          ამ გვერდის შექმნაზე იზრუნა: <span>ანა ირემაძე</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2: THREE SCRIPTS -->
+    <section id="scripts" class="page-section">
+      <div class="section-header">
+        <h2 data-i18n="scripts_title">სამი ისტორიული დამწერლობა</h2>
+        <p data-i18n="scripts_subtitle">ქართული დამწერლობის განვითარების სამი საფეხური, რომლებიც დღესაც ცოცხალია</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-tag" data-i18n="asomtavruli_era">ძვ.წ. III ს. – V ს.</div>
+          <h3 data-i18n="asomtavruli_name">ასომთავრული (მრგვლოვანი)</h3>
+          <div class="sample-text">ႠⲂᲒⲆⲈ Esqu</div>
+          <p data-i18n="asomtavruli_desc">უძველესი ქართული დამწერლობა. ხასიათდება გეომეტრიული სიზუსტით, წრიული მოხაზულობებითა და თანაბარი ზომის ასოებით.</p>
+          <div class="monarch-box">
+            <strong data-i18n="monarch_label">ეპოქის მეფეები:</strong>
+            <span data-i18n="asomtavruli_kings">ფარნავაზ I (ძვ.წ. III ს.), ვახტანგ გორგასალი (V ს.)</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-tag" data-i18n="nuskhuri_era">IX საუკუნიდან</div>
+          <h3 data-i18n="nuskhuri_name">ნუსხური</h3>
+          <div class="sample-text">ⴀⴁⴂⴃⴄⴅ</div>
+          <p data-i18n="nuskhuri_desc">განვითარდა ასომთავრულისგან სწრაფი წერის შედეგად. კუთხოვანი და დახრილი ფორმებით გამოირჩევა, ძირითადად საეკლესიო წიგნებში გამოიყენებოდა.</p>
+          <div class="monarch-box">
+            <strong data-i18n="monarch_label">ეპოქის მეფეები:</strong>
+            <span data-i18n="nuskhuri_kings">აშოტ I კურაპალატი (IX ს.), ბაგრატ III (X-XI ს.)</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-tag" data-i18n="mkhedruli_era">X საუკუნიდან – დღემდე</div>
+          <h3 data-i18n="mkhedruli_name">მხედრული</h3>
+          <div class="sample-text">აბგდევზთ</div>
+          <p data-i18n="mkhedruli_desc">თანამედროვე ქართული ანბანი. წარმოიშვა სამოქალაქო წერილობისთვის. გამოირჩევა მომრგვალებული, დინამიური და ჰარმონიული ფორმებით.</p>
+          <div class="monarch-box">
+            <strong data-i18n="monarch_label">ეპოქის მეფეები:</strong>
+            <span data-i18n="mkhedruli_kings">დავით IV აღმაშენებელი (XI-XII ს.), თამარ მეფე (XII-XIII ს.)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="books" class="page-section">
+      <div class="section-header">
+        <h2 data-i18n="books_title">ისტორიული წიგნები და ძეგლები</h2>
+        <p data-i18n="books_subtitle">ქართული მწიგნობრობის შედევრები და მათი შექმნის ეპოქები</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-tag" data-i18n="book1_date">V საუკუნე (476-483 წწ.)</div>
+          <h3 data-i18n="book1_title">„შუშანიკის წამება“</h3>
+          <div class="author-info" data-i18n="book1_author">ავტორი: იაკობ ცურტაველი</div>
+          <p data-i18n="book1_desc">ჩვენამდე მოღწეული უძველესი ქართული ორიგინალური მხატვრული და ჰაგიოგრაფიული ნაწარმოები. დაწერილია ასომთავრული დამწერლობით.</p>
+          <div class="monarch-box">
+            <strong data-i18n="monarch_label">ეპოქის მეფე:</strong>
+            <span data-i18n="book1_king">ვახტანგ I გორგასალი</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-tag" data-i18n="book2_date">IX საუკუნე (897 წ.)</div>
+          <h3 data-i18n="book2_title">ადერშის (ადიშის) ოთხთავი</h3>
+          <div class="author-info" data-i18n="book2_author">ავტორი: გადამწერი მიქაელი</div>
+          <p data-i18n="book2_desc">ჩვენამდე მოღწეული უძველესი თარიღიანი ქართული ოთხთავი (სახარება). დაწერილია ასომთავრული დამწერლობით კლარჯეთში.</p>
+          <div class="monarch-box">
+            <strong data-i18n="monarch_label">ეპოქის მეფე:</strong>
+            <span data-i18n="book2_king">ადარნასე II (ქართველთა მეფე)</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-tag" data-i18n="book3_date">XII საუკუნე</div>
+          <h3 data-i18n="book3_title">„ვეფხისტყაოსანი“</h3>
+          <div class="author-info" data-i18n="book3_author">ავტორი: შოთა რუსთაველი</div>
+          <p data-i18n="book3_desc">ქართული აღორძინების ხანის გენიალური პოემა. მსოფლიო ლიტერატურის შედევრი, დაწერილი მხედრული დამწერლობით.</p>
+          <div class="monarch-box">
+            <strong data-i18n="monarch_label">ეპოქის მეფე:</strong>
+            <span data-i18n="book3_king">თამარ მეფე</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="page-section">
+      <div class="section-header">
+        <h2 data-i18n="quiz_title">ისტორიული ქვიზი (20 კითხვა)</h2>
+        <p data-i18n="quiz_subtitle">შეამოწმეთ თქვენი ცოდნა ქართული დამწერლობის, წიგნებისა და მეფეების შესახებ</p>
+      </div>
+
+      <div class="quiz-container">
+        <div id="quizBox">
+          <div class="quiz-progress">
+            <span id="quizProgressText">კითხვა 1 / 20</span>
+            <div class="progress-bar">
+              <div id="progressBarFill" class="progress-fill" style="width: 5%;"></div>
+            </div>
+          </div>
+
+          <h3 id="questionText" class="question-title">კითხვა იტვირთება...</h3>
+          <div id="optionsContainer" class="options-grid"></div>
+          <div id="explanationBox" class="explanation-box" style="display: none;"></div>
+
+          <div class="quiz-footer">
+            <button id="nextBtn" class="btn btn-gold" onclick="nextQuestion()" style="display: none;" data-i18n="btn_next">შემდეგი კითხვა</button>
+          </div>
+        </div>
+
+        <div id="resultBox" class="result-box" style="display: none;">
+          <h3 data-i18n="result_title">ქვიზი დასრულებულია!</h3>
+          <div class="score-display">
+            <span id="finalScore">0</span> / 20
+          </div>
+          <p id="scoreMessage">შედეგი...</p>
+          <button class="btn btn-gold" onclick="restartQuiz()" data-i18n="btn_restart">თავიდან დაწყება</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const translations = {
+      ka: {
+        nav_home: "მთავარი",
+        nav_scripts: "დამწერლობები",
+        nav_books: "წიგნები",
+        nav_quiz: "ქვიზი",
+        hero_badge: "იუნესკოს არამატერიალური კულტურული მემკვიდრეობა",
+        hero_title: "ქართული ენა და მისი დამწერლობა",
+        hero_subtitle: "სამი ათასწლოვანი კულტურა, სამი ცოცხალი დამწერლობა და უმდიდრესი მწიგნობრობა",
+        btn_explore: "დამწერლობების აღმოჩენა",
+        btn_start_quiz: "ქვიზის შევსება (20 კითხვა)",
+        creator_text: "ამ გვერდის შექმნაზე იზრუნა: <span>ანა ირემაძე</span>",
+        scripts_title: "სამი ისტორიული დამწერლობა",
+        scripts_subtitle: "ქართული დამწერლობის განვითარების სამი საფეხური, რომლებიც დღესაც ცოცხალია",
+        asomtavruli_era: "ძვ.წ. III ს. – V ს.",
+        asomtavruli_name: "ასომთავრული (მრგვლოვანი)",
+        asomtavruli_desc: "უძველესი ქართული დამწერლობა. ხასიათდება გეომეტრიული სიზუსტით, წრიული მოხაზულობებითა და თანაბარი ზომის ასოებით.",
+        monarch_label: "ეპოქის მეფეები:",
+        asomtavruli_kings: "ფარნავაზ I (ძვ.წ. III ს.), ვახტანგ გორგასალი (V ს.)",
+        nuskhuri_era: "IX საუკუნიდან",
+        nuskhuri_name: "ნუსხური",
+        nuskhuri_desc: "განვითარდა ასომთავრულისგან სწრაფი წერის შედეგად. კუთხოვანი და დახრილი ფორმებით გამოირჩევა, ძირითადად საეკლესიო წიგნებში გამოიყენებოდა.",
+        nuskhuri_kings: "აშოტ I კურაპალატი (IX ს.), ბაგრატ III (X-XI ს.)",
+        mkhedruli_era: "X საუკუნიდან – დღემდე",
+        mkhedruli_name: "მხედრული",
+        mkhedruli_desc: "თანამედროვე ქართული ანბანი. წარმოიშვა სამოქალაქო წერილობისთვის. გამოირჩევა მომრგვალებული, დინამიური და ჰარმონიული ფორმებით.",
+        mkhedruli_kings: "დავით IV აღმაშენებელი (XI-XII ს.), თამარ მეფე (XII-XIII ს.)",
+        books_title: "ისტორიული წიგნები და ძეგლები",
+        books_subtitle: "ქართული მწიგნობრობის შედევრები და მათი შექმნის ეპოქები",
+        book1_date: "V საუკუნე (476-483 წწ.)",
+        book1_title: "„შუშანიკის წამება“",
+        book1_author: "ავტორი: იაკობ ცურტაველი",
+        book1_desc: "ჩვენამდე მოღწეული უძველესი ქართული ორიგინალური მხატვრული და ჰაგიოგრაფიული ნაწარმოები. დაწერილია ასომთავრული დამწერლობით.",
+        book1_king: "ვახტანგ I გორგასალი",
+        book2_date: "IX საუკუნე (897 წ.)",
+        book2_title: "ადერშის (ადიშის) ოთხთავი",
+        book2_author: "ავტორი: გადამწერი მიქაელი",
+        book2_desc: "ჩვენამდე მოღწეული უძველესი თარიღიანი ქართული ოთხთავი (სახარება). დაწერილია ასომთავრული დამწერლობით კლარჯეთში.",
+        book2_king: "ადარნასე II (ქართველთა მეფე)",
+        book3_date: "XII საუკუნე",
+        book3_title: "„ვეფხისტყაოსანი“",
+        book3_author: "ავტორი: შოთა რუსთაველი",
+        book3_desc: "ქართული აღორძინების ხანის გენიალური პოემა. მსოფლიო ლიტერატურის შედევრი, დაწერილი მხედრული დამწერლობით.",
+        book3_king: "თამარ მეფე",
+        quiz_title: "ისტორიული ქვიზი (20 კითხვა)",
+        quiz_subtitle: "შეამოწმეთ თქვენი ცოდნა ქართული დამწერლობის, წიგნებისა და მეფეების შესახებ",
+        btn_next: "შემდეგი კითხვა",
+        result_title: "ქვიზი დასრულებულია!",
+        btn_restart: "თავიდან დაწყება"
+      },
+      en: {
+        nav_home: "Home",
+        nav_scripts: "Scripts",
+        nav_books: "Books",
+        nav_quiz: "Quiz",
+        hero_badge: "UNESCO Intangible Cultural Heritage",
+        hero_title: "Georgian Language and Its Scripts",
+        hero_subtitle: "A three-thousand-year-old culture, three living scripts, and rich literary heritage",
+        btn_explore: "Explore Scripts",
+        btn_start_quiz: "Take Quiz (20 Questions)",
+        creator_text: "Created by: <span>Ana Iremadze</span>",
+        scripts_title: "Three Historic Scripts",
+        scripts_subtitle: "The three evolutionary stages of Georgian writing, all alive today",
+        asomtavruli_era: "3rd C. BC – 5th C. AD",
+        asomtavruli_name: "Asomtavruli (Mrgvlovani)",
+        asomtavruli_desc: "The oldest Georgian script. Characterized by geometric precision, rounded shapes, and uniform letter sizes.",
+        monarch_label: "Reigning Monarchs:",
+        asomtavruli_kings: "Parnavaz I (3rd C. BC), Vakhtang Gorgasali (5th C. AD)",
+        nuskhuri_era: "From 9th Century AD",
+        nuskhuri_name: "Nuskhuri",
+        nuskhuri_desc: "Evolved from Asomtavruli through fast cursive writing. Angular and slanted, used mostly in religious texts.",
+        nuskhuri_kings: "Ashot I Kurapalates (9th C.), Bagrat III (10th-11th C.)",
+        mkhedruli_era: "10th Century – Present",
+        mkhedruli_name: "Mkhedruli",
+        mkhedruli_desc: "The modern Georgian alphabet. Originated for secular writing, featuring rounded, dynamic, and fluid curves.",
+        mkhedruli_kings: "David IV the Builder (11th-12th C.), Queen Tamar (12th-13th C.)",
+        books_title: "Historic Books and Monuments",
+        books_subtitle: "Masterpieces of Georgian literature and their historical epochs",
+        book1_date: "5th Century AD (476-483)",
+        book1_title: "“Martyrdom of Saint Shushanik”",
+        book1_author: "Author: Iakob Tsurtaveli",
+        book1_desc: "The oldest surviving original Georgian literary and hagiographic work. Written in Asomtavruli script.",
+        book1_king: "Vakhtang I Gorgasali",
+        book2_date: "9th Century AD (897)",
+        book2_title: "Adishi Gospels",
+        book2_author: "Scribe: Mikael",
+        book2_desc: "The oldest dated Georgian Gospel manuscript. Written in Asomtavruli script in Klarjeti.",
+        book2_king: "Adarnase II (King of the Georgians)",
+        book3_date: "12th Century AD",
+        book3_title: "“The Knight in the Panther's Skin”",
+        book3_author: "Author: Shota Rustaveli",
+        book3_desc: "An epic poem of the Georgian Golden Age. A masterpiece of world literature, written in Mkhedruli.",
+        book3_king: "Queen Tamar",
+        quiz_title: "Historical Quiz (20 Questions)",
+        quiz_subtitle: "Test your knowledge about Georgian scripts, literature, and reigning monarchs",
+        btn_next: "Next Question",
+        result_title: "Quiz Completed!",
+        btn_restart: "Restart Quiz"
+      }
+    };
+
+    const quizQuestions = [
+      {
+        q: { ka: "რომელი მეფის სახელს უკავშირებს ქართული ტრადიცია ქართული დამწერლობის შექმნას ძვ.წ. III საუკუნეში?", en: "Which king is traditionally credited with creating the Georgian alphabet in the 3rd century BC?" },
+        options: [
+          { ka: "ფარნავაზ I", en: "Parnavaz I" },
+          { ka: "ვახტანგ გორგასალი", en: "Vakhtang Gorgasali" },
+          { ka: "დავით აღმაშენებელი", en: "David the Builder" },
+          { ka: "მირიან III", en: "Mirian III" }
+        ],
+        correct: 0,
+        exp: { ka: "ქართული მატიანეს („ქართლის ცხოვრება“) თანახმად, ქართული დამწერლობა შექმნა ქართლის პირველმა მეფემ - ფარნავაზ I-მა.", en: "According to Georgian chronicles, the first king of Kartli, Parnavaz I, created the Georgian script." }
+      },
+      {
+        q: { ka: "რომელია ჩვენამდე მოღწეული უძველესი ქართული ორიგინალური მხატვრული ნაწარმოები?", en: "What is the oldest surviving original Georgian literary masterpiece?" },
+        options: [
+          { ka: "„გრეგოლ ხანძთელის ცხოვრება“", en: "The Life of Grigol Khandzteli" },
+          { ka: "„შუშანიკის წამება“", en: "Martyrdom of Saint Shushanik" },
+          { ka: "„აბო თბილელის წამება“", en: "Martyrdom of Abo Tbileli" },
+          { ka: "„ვეფხისტყაოსანი“", en: "The Knight in the Panther's Skin" }
+        ],
+        correct: 1,
+        exp: { ka: "„შუშანიკის წამება“ დაწერა იაკობ ცურტაველმა V საუკუნეში (476-483 წლებში).", en: "Written by Iakob Tsurtaveli in the 5th century (476-483 AD)." }
+      },
+      {
+        q: { ka: "რომელი დამწერლობით არის დაწერილი V საუკუნის ძეგლი „შუშანიკის წამება“?", en: "In which script was the 5th-century masterpiece 'Martyrdom of Saint Shushanik' originally written?" },
+        options: [
+          { ka: "ნუსხურით", en: "Nuskhuri" },
+          { ka: "მხედრულით", en: "Mkhedruli" },
+          { ka: "ასომთავრულით", en: "Asomtavruli" },
+          { ka: "მხოლოდ მხედრულით", en: "Modern Mkhedruli" }
+        ],
+        correct: 2,
+        exp: { ka: "V საუკუნეში ერთადერთი ქართული დამწერლობა იყო ასომთავრული (მრგვლოვანი).", en: "In the 5th century AD, Asomtavruli was the sole Georgian script in use." }
+      },
+      {
+        q: { ka: "რომელი მეფე მეფობდა ქართლში „შუშანიკის წამების“ მოვლენების პერიოდში (V საუკუნე)?", en: "Which king ruled Kartli during the period of the 'Martyrdom of Saint Shushanik' (5th century)?" },
+        options: [
+          { ka: "გიორგი III", en: "Giorgi III" },
+          { ka: "ვახტანგ I გორგასალი", en: "Vakhtang I Gorgasali" },
+          { ka: "ბაგრატ IV", en: "Bagrat IV" },
+          { ka: "არჩილ II", en: "Archil II" }
+        ],
+        correct: 1,
+        exp: { ka: "V საუკუნის მეორე ნახევარში ქართლის ძლიერი მეფე იყო ვახტანგ I გორგასალი.", en: "King Vakhtang I Gorgasali ruled Kartli during the late 5th century." }
+      },
+      {
+        q: { ka: "რომელ საუკუნეში ჩამოყალიბდა ნუსხური დამწერლობა ასომთავრულისგან?", en: "In which century did the Nuskhuri script evolve from Asomtavruli?" },
+        options: [
+          { ka: "III საუკუნეში", en: "3rd Century AD" },
+          { ka: "IX საუკუნეში", en: "9th Century AD" },
+          { ka: "XV საუკუნეში", en: "15th Century AD" },
+          { ka: "XVIII საუკუნეში", en: "18th Century AD" }
+        ],
+        correct: 1,
+        exp: { ka: "ნუსხური ჩამოყალიბდა IX საუკუნეში სწრაფი წერის შედეგად.", en: "Nuskhuri developed during the 9th century AD as a faster cursive script." }
+      },
+      {
+        q: { ka: "რომელ საუკუნეში შეიქმნა გენიალური პოემა „ვეფხისტყაოსანი“?", en: "In which century was the epic poem 'The Knight in the Panther's Skin' created?" },
+        options: [
+          { ka: "V საუკუნეში", en: "5th Century AD" },
+          { ka: "XII საუკუნეში", en: "12th Century AD" },
+          { ka: "IX საუკუნეში", en: "9th Century AD" },
+          { ka: "XVII საუკუნეში", en: "17th Century AD" }
+        ],
+        correct: 1,
+        exp: { ka: "„ვეფხისტყაოსანი“ შეიქმნა XII საუკუნის ბოლოს, ქართული ოქროს ხანაში.", en: "It was written at the end of the 12th century, during Georgia's Golden Age." }
+      },
+      {
+        q: { ka: "რომელი მონარქის ზეობის ხანაში მოღვაწეობდა შოთა რუსთაველი?", en: "During the reign of which monarch did Shota Rustaveli live and write?" },
+        options: [
+          { ka: "დავით აღმაშენებლის", en: "David the Builder" },
+          { ka: "თამარ მეფის", en: "Queen Tamar" },
+          { ka: "დემეტრე I-ის", en: "Demetrius I" },
+          { ka: "ერეკლე II-ის", en: "Erekle II" }
+        ],
+        correct: 1,
+        exp: { ka: "შოთა რუსთაველი მოღვაწეობდა თამარ მეფის კარსა და ეპოქაში.", en: "Shota Rustaveli was the royal treasurer and poet at the court of Queen Tamar." }
+      },
+      {
+        q: { ka: "რამდენი ცოცხალი დამწერლობისგან შედგება ქართული დამწერლობის იუნესკოს ძეგლი?", en: "How many living scripts make up the Georgian writing system recognized by UNESCO?" },
+        options: [
+          { ka: "1", en: "1" },
+          { ka: "2", en: "2" },
+          { ka: "3", en: "3" },
+          { ka: "4", en: "4" }
+        ],
+        correct: 2,
+        exp: { ka: "იუნესკომ 2016 წელს აღიარა ქართული ენის სამივე ცოცხალი დამწერლობა (ასომთავრული, ნუსხური, მხედრული).", en: "In 2016, UNESCO recognized all 3 living Georgian scripts." }
+      },
+      {
+        q: { ka: "რომელია ჩვენამდე მოღწეული უძველესი თარიღიანი ქართული ოთხთავი (სახარება)?", en: "Which is the oldest dated surviving Georgian Gospel manuscript?" },
+        options: [
+          { ka: "ვანის ოთხთავი", en: "Vani Gospels" },
+          { ka: "ადიშის (ადერშის) ოთხთავი", en: "Adishi Gospels" },
+          { ka: "ჯრუჭის ოთხთავი", en: "Jruchi Gospels" },
+          { ka: "ბეთანიის ოთხთავი", en: "Bethania Gospels" }
+        ],
+        correct: 1,
+        exp: { ka: "ადიშის ოთხთავი გადაწერილია 897 წელს კლარჯეთში, შატბერდის მონასტერში.", en: "The Adishi Gospels manuscript dates back to 897 AD, copied at Shatberdi Monastery." }
+      },
+      {
+        q: { ka: "რომელმა მეფემ გააერთიანა პირველად სრულიად საქართველო XI საუკუნის დასაწყისში (1008 წ.)?", en: "Which king first unified all of Georgia at the beginning of the 11th century (1008 AD)?" },
+        options: [
+          { ka: "ბაგრატ III-მ", en: "Bagrat III" },
+          { ka: "დავით IV აღმაშენებელმა", en: "David IV the Builder" },
+          { ka: "გიორგი I-მა", en: "Giorgi I" },
+          { ka: "ფარნავაზ I-მა", en: "Parnavaz I" }
+        ],
+        correct: 0,
+        exp: { ka: "ბაგრატ III გახდა ერთიანი საქართველოს პირველი მეფე 1008 წელს.", en: "Bagrat III became the first monarch of unified Georgia in 1008 AD." }
+      },
+      {
+        q: { ka: "რომელ საუკუნეში დაიწერა „გრიგოლ ხანძთელის ცხოვრება“ გიორგი მერჩულეს მიერ?", en: "In which century was 'The Life of Grigol Khandzteli' written by Giorgi Merchule?" },
+        options: [
+          { ka: "V საუკუნეში", en: "5th Century AD" },
+          { ka: "X საუკუნეში (951 წ.)", en: "10th Century AD (951 AD)" },
+          { ka: "XII საუკუნეში", en: "12th Century AD" },
+          { ka: "XIV საუკუნეში", en: "14th Century AD" }
+        ],
+        correct: 1,
+        exp: { ka: "ეს უმნიშვნელოვანესი ნაწარმოები გიორგი მერჩულემ დაწერა 951 წელს.", en: "This milestone hagiographic masterpiece was written in 951 AD." }
+      },
+      {
+        q: { ka: "რომელ ქართულ დამწერლობას იყენებს დღეს სამოქალაქო და ყოველდღიური საზოგადოება?", en: "Which Georgian script is used in modern everyday civil society and printing?" },
+        options: [
+          { ka: "ასომთავრულს", en: "Asomtavruli" },
+          { ka: "ნუსხურს", en: "Nuskhuri" },
+          { ka: "მხედრულს", en: "Mkhedruli" },
+          { ka: "ხუცურს", en: "Khutsuri" }
+        ],
+        correct: 2,
+        exp: { ka: "მხედრული არის თანამედროვე ქართული დამწერლობა, რომელსაც დღეს ვიყენებთ.", en: "Mkhedruli is the script used for modern Georgian writing and printing." }
+      },
+      {
+        q: { ka: "რა ეწოდება ერთობლივად ასომთავრულ და ნუსხურ დამწერლობებს საეკლესიო ტრადიციაში?", en: "What are Asomtavruli and Nuskhuri combined called in ecclesiastical traditions?" },
+        options: [
+          { ka: "ხუცური", en: "Khutsuri" },
+          { ka: "მრგვლოვანი", en: "Mrgvlovani" },
+          { ka: "საერო წერილობა", en: "Secular Script" },
+          { ka: "სამხედრო ანბანი", en: "Military Script" }
+        ],
+        correct: 0,
+        exp: { ka: "ასომთავრულისა და ნუსხურის ერთობლიობას ეწოდება ხუცური (სასულიერო წერილობა).", en: "Together, Asomtavruli and Nuskhuri are known as Khutsuri (clerical script)." }
+      },
+      {
+        q: { ka: "რომელი დიდი საგანმანათლებლო ცენტრი დაარსდა XII საუკუნეში დავით აღმაშენებლის მიერ?", en: "Which famous medieval academy was founded in the 12th century by King David the Builder?" },
+        options: [
+          { ka: "გელათის აკადემია", en: "Gelati Academy" },
+          { ka: "იყალთოს აკადემია", en: "Iqalto Academy" },
+          { ka: "შატბერდის სკოლა", en: "Shatberdi School" },
+          { ka: "ოშკის ცენტრი", en: "Oshki Center" }
+        ],
+        correct: 0,
+        exp: { ka: "დავით აღმაშენებელმა დაარსა გელათის აკადემია, რომელსაც „ახალ ათინას“ უწოდებდნენ.", en: "King David IV built Gelati Academy, often dubbed 'a second Athens'." }
+      },
+      {
+        q: { ka: "რამდენი ასო-ბგერისგან შედგება თანამედროვე ქართული ანბანი (მხედრული)?", en: "How many letters make up the modern Georgian alphabet (Mkhedruli)?" },
+        options: [
+          { ka: "38", en: "38" },
+          { ka: "33", en: "33" },
+          { ka: "35", en: "35" },
+          { ka: "26", en: "26" }
+        ],
+        correct: 1,
+        exp: { ka: "თანამედროვე ქართულ ანბანში 33 ასო-ბგერაა (5 ხოვანი და 28 თანხმოვანი).", en: "The modern Georgian alphabet consists of exactly 33 letters." }
+      },
+      {
+        q: { ka: "რამდენი ასოსგან შედგებოდა ძველი ქართული ასომთავრული ანბანი ილია ჭავჭავაძის რეფორმამდე?", en: "How many letters were in the historical Georgian alphabet before Ilia Chavchavadze's reform?" },
+        options: [
+          { ka: "33", en: "33" },
+          { ka: "38", en: "38" },
+          { ka: "40", en: "40" },
+          { ka: "30", en: "30" }
+        ],
+        correct: 1,
+        exp: { ka: "ძველ ქართულ ანბანში 38 ასო იყო. ილია ჭავჭავაძემ და თანამოაზრეებმა XIX საუკუნეში ის 33 ასომდე შეამცირეს.", en: "The historical alphabet had 38 letters until 5 archaic letters were removed in the 19th century." }
+      },
+      {
+        q: { ka: "რომელ საუკუნეში მოღვაწეობდა ვახტანგ VI, რომელმაც თბილისში პირველი ქართული სტამბა დაარსა?", en: "In which century did King Vakhtang VI establish the first Georgian printing house in Tbilisi?" },
+        options: [
+          { ka: "XII საუკუნეში", en: "12th Century AD" },
+          { ka: "XVIII საუკუნის დასაწყისში (1709 წ.)", en: "Early 18th Century (1709 AD)" },
+          { ka: "XV საუკუნეში", en: "15th Century AD" },
+          { ka: "XIX საუკუნის ბოლოს", en: "Late 19th Century" }
+        ],
+        correct: 1,
+        exp: { ka: "ვახტანგ VI-მ პირველი ქართული სტამბა თბილისში დაარსა 1709 წელს, სადაც პირველად დაიბეჭდა სახარება და „ვეფხისტყაოსანი“.", en: "Vakhtang VI founded the first Georgian print house in 1709." }
+      },
+      {
+        q: { ka: "რომელ საუკუნეში იმოღვაწა სულხან-საბა ორბელიანმა, „სიტყვის კონის“ ავტორმა?", en: "In which century did Sulkhan-Saba Orbeliani compile the famous dictionary 'Sitkvis Kona'?" },
+        options: [
+          { ka: "XVII-XVIII საუკუნეებში", en: "17th-18th Century AD" },
+          { ka: "X საუკუნეში", en: "10th Century AD" },
+          { ka: "V საუკუნეში", en: "5th Century AD" },
+          { ka: "XIV საუკუნეში", en: "14th Century AD" }
+        ],
+        correct: 0,
+        exp: { ka: "სულხან-საბა ორბელიანი მოღვაწეობდა XVII-XVIII საუკუნეების მიჯნაზე (მეფე ერეკლე I-ისა და ვახტანგ VI-ის ეპოქაში).", en: "Sulkhan-Saba Orbeliani lived and wrote during the late 17th and early 18th centuries." }
+      },
+      {
+        q: { ka: "რომელ წელს შეიყვანა იუნესკომ ქართული დამწერლობის სამი სისტემა არამატერიალური კულტურული მემკვიდრეობის სიაში?", en: "In which year did UNESCO write all 3 Georgian scripts into the Representative List of Intangible Cultural Heritage?" },
+        options: [
+          { ka: "2000 წელს", en: "2000" },
+          { ka: "2016 წელს", en: "2016" },
+          { ka: "2010 წელს", en: "2010" },
+          { ka: "2020 წელს", en: "2020" }
+        ],
+        correct: 1,
+        exp: { ka: "2016 წლის 30 ნოემბერს იუნესკომ ქართული ანბანის სამივე ცოცხალი სისტემა მსოფლიო მემკვიდრეობად აღიარა.", en: "On November 30, 2016, UNESCO inscribed Georgian scripts on the Intangible Heritage list." }
+      },
+      {
+        q: { ka: "რომელმა ქართველმა მოღვაწემ შექმნა „დედა ენა“ 1876 წელს?", en: "Which Georgian educator and public figure created the foundational textbook 'Deda Ena' in 1876?" },
+        options: [
+          { ka: "ილია ჭავჭავაძემ", en: "Ilia Chavchavadze" },
+          { ka: "იაკობ გოგებაშვილმა", en: "Iakob Gogebashvili" },
+          { ka: "აკაკი წერეთელმა", en: "Akaki Tsereteli" },
+          { ka: "ვაჟა-ფშაველამ", en: "Vaja-Pshavela" }
+        ],
+        correct: 1,
+        exp: { ka: "იაკობ გოგებაშვილმა 1876 წელს შეადგინა „დედა ენა“, რომელმაც უდიდესი როლი ითამაშა ქართველი ერის განათლებაში.", en: "Iakob Gogebashvili created the famous primer 'Deda Ena' in 1876." }
+      }
+    ];
+
+    let currentLang = 'ka';
+    let currentQIndex = 0;
+    let score = 0;
+    let answered = false;
+
+    function navigateTo(targetHash) {
+      document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('active'));
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+
+      const targetSection = document.querySelector(targetHash);
+      if (targetSection) targetSection.classList.add('active');
+
+      const activeLink = document.querySelector(`nav a[href="${targetHash}"]`);
+      if (activeLink) activeLink.classList.add('active');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        navigateTo(this.getAttribute('href'));
+      });
+    });
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'ka' ? 'en' : 'ka';
+      document.getElementById('langBtn').innerText = currentLang === 'ka' ? 'EN' : 'GE';
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[currentLang][key]) {
+          if (el.tagName === 'SPAN' && el.parentElement.classList.contains('creator-credit')) {
+            el.innerText = currentLang === 'ka' ? 'ანა ირემაძე' : 'Ana Iremadze';
+          } else {
+            el.innerHTML = translations[currentLang][key];
+          }
+        }
+      });
+
+      loadQuestion();
+    }
+
+    function loadQuestion() {
+      answered = false;
+      const qData = quizQuestions[currentQIndex];
+
+      document.getElementById('quizProgressText').innerText = currentLang === 'ka' 
+        ? `კითხვა ${currentQIndex + 1} / ${quizQuestions.length}` 
+        : `Question ${currentQIndex + 1} / ${quizQuestions.length}`;
+
+      document.getElementById('progressBarFill').style.width = `${((currentQIndex + 1) / quizQuestions.length) * 100}%`;
+      document.getElementById('questionText').innerText = qData.q[currentLang];
+
+      const optionsGrid = document.getElementById('optionsContainer');
+      optionsGrid.innerHTML = '';
+
+      const expBox = document.getElementById('explanationBox');
+      expBox.style.display = 'none';
+      expBox.innerText = '';
+
+      document.getElementById('nextBtn').style.display = 'none';
+
+      qData.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'option-btn';
+        btn.innerText = opt[currentLang];
+        btn.onclick = () => selectOption(idx);
+        optionsGrid.appendChild(btn);
+      });
+    }
+
+    function selectOption(selectedIndex) {
+      if (answered) return;
+      answered = true;
+
+      const qData = quizQuestions[currentQIndex];
+      const buttons = document.querySelectorAll('.option-btn');
+
+      if (selectedIndex === qData.correct) {
+        buttons[selectedIndex].classList.add('correct');
+        score++;
+      } else {
+        buttons[selectedIndex].classList.add('wrong');
+        buttons[qData.correct].classList.add('correct');
+      }
+
+      buttons.forEach(btn => btn.disabled = true);
+
+      const expBox = document.getElementById('explanationBox');
+      expBox.innerText = qData.exp[currentLang];
+      expBox.style.display = 'block';
+
+      const nextBtn = document.getElementById('nextBtn');
+      nextBtn.style.display = 'inline-block';
+      nextBtn.innerText = (currentQIndex === quizQuestions.length - 1)
+        ? (currentLang === 'ka' ? 'შედეგების ნახვა' : 'See Results')
+        : translations[currentLang]['btn_next'];
+    }
+
+    function nextQuestion() {
+      if (currentQIndex < quizQuestions.length - 1) {
+        currentQIndex++;
+        loadQuestion();
+      } else {
+        showResults();
+      }
+    }
+
+    function showResults() {
+      document.getElementById('quizBox').style.display = 'none';
+      const resultBox = document.getElementById('resultBox');
+      resultBox.style.display = 'block';
+
+      document.getElementById('finalScore').innerText = score;
+
+      let msg = '';
+      if (score === 20) {
+        msg = currentLang === 'ka' ? "გენიალურია! თქვენ იდეალურად იცნობთ საქართველოს ისტორიასა და მწიგნობრობას!" : "Outstanding! You have perfect knowledge of Georgian history and manuscripts!";
+      } else if (score >= 15) {
+        msg = currentLang === 'ka' ? "ძალიან კარგი შედეგია! თქვენ შესანიშნავად ფლობთ ქართული ენისა და დამწერლობის ისტორიას." : "Great job! You have impressive knowledge of Georgian scripts and history.";
+      } else if (score >= 10) {
+        msg = currentLang === 'ka' ? "კარგი შედეგია, თუმცა კიდევ შეგიძლიათ ცოდნის გაღრმავება." : "Good effort! You know the basics well, but there's room to explore deeper.";
+      } else {
+        msg = currentLang === 'ka' ? "გირჩევთ გადახედოთ მე-2 და მე-3 გვერდებს და სცადოთ ხელახლა!" : "We recommend reading pages 2 and 3 and trying again!";
+      }
+
+      document.getElementById('scoreMessage').innerText = msg;
+    }
+
+    function restartQuiz() {
+      currentQIndex = 0;
+      score = 0;
+      document.getElementById('resultBox').style.display = 'none';
+      document.getElementById('quizBox').style.display = 'block';
+      loadQuestion();
+    }
+
+    window.onload = loadQuestion;
+  </script>
+</body>
+</html>
